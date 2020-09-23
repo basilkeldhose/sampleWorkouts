@@ -78,7 +78,7 @@ for (const index in digit){
 //for...of loop
 
 const name =['basil', 'sinu', 'manaf', 'kiran'];
-console.log("dor...of loop output :");
+console.log("for...of loop output :");
 for(names of name){
     console.log(names);
 };

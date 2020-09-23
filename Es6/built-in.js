@@ -1,10 +1,5 @@
 
 // symbols
-
-const { performance } = require("perf_hooks");
-const { match, rejects } = require("assert");
-const { resolve } = require("dns");
-
 const sym1 = Symbol('apple');
 console.log(sym1);
 
@@ -21,7 +16,7 @@ for(const digit of digits){
 
 //iterator protocol
 
-const number =[0,1,2,3,4,5,6,7,8,9]
+const number =[0,1,2,3,4,5,6,7,8,9];
 const arrayIterator =digits[Symbol.iterator]();
 console.log(arrayIterator.next());
 console.log(arrayIterator.next());
@@ -107,4 +102,3 @@ member.forEach((values,key)=>{
     console.log(key,values);
 });
 
-// promises

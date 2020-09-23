@@ -3,8 +3,6 @@
 //     return name.toUpperCase();
 // });
 
-const { isTryStatement } = require("@babel/types");
-
 const uppersizedName=["basil","aleiyas","kiran"].map(name=>name.toUpperCase());
 console.log(uppersizedName);
 
@@ -17,7 +15,7 @@ say();
 // multiple parameters requires parentheses
 
 const icecream =(flavor,price)=>{
-    console.log(`Here's your ${flavor} ice cream in a ${price} rupee.`);
+    console.log(`Here's your ${flavor} ice cream the price of ${price} rupee.`);
 
 }
 icecream('chocolate',100);

@@ -58,7 +58,7 @@ var name = ['basil', 'aleiyas', 'shiby'];
 for (var i = 0; i < name.length; i++) {
       name[i] += ' k eldhose'
       var result = name[i] = name[i].toUpperCase();
-      console.log(result)
+      console.log(result);
 }
 
 //foreach loop
@@ -78,6 +78,20 @@ name.map(function (name) {
     name = name.toUpperCase();
     console.log(name)
 });
+
+// create an array and find second largest number
+
+var a =[8,5,4,7,9,2,3,9,];
+var b = a.sort()
+var c= a.reverse()
+console.log(c);
+const [x]= c;
+if(c[0]!=[x]){
+    console.log(c[1])
+}
+else {
+    console.log(c[2])
+}
 
 
 
