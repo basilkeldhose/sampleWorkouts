@@ -37,35 +37,35 @@ console.log(name);
 // reverse
 
 var reverse = ['a', 'b', 'c', 'd'];
-    reverse.reverse();
-    console.log(reverse);
+reverse.reverse();
+console.log(reverse);
 
 // Sort
 
 var elements = [5, 8, 3, 0, 1, 9, 2];
-    elements.sort();
-    console.log(elements);
+elements.sort();
+console.log(elements);
 
 // join
 
 var name = ['basil', 'sinu', 'manaf', 'kiran'];
 var string = name.join();
-    console.log(string);
+console.log(string);
 
 // Array loops
 
 var name = ['basil', 'aleiyas', 'shiby'];
 for (var i = 0; i < name.length; i++) {
-      name[i] += ' k eldhose'
-      var result = name[i] = name[i].toUpperCase();
-      console.log(result);
+    name[i] += ' k eldhose'
+    var result = name[i] = name[i].toUpperCase();
+    console.log(result);
 }
 
 //foreach loop
 var name = ['basil', 'aleiyas', 'shiby'];
 name.forEach(function (name) {
-      name += " eldhsoe";
-     name = name.toUpperCase();
+    name += " eldhsoe";
+    name = name.toUpperCase();
     console.log("Foreach result:", name);
 
 
@@ -81,19 +81,15 @@ name.map(function (name) {
 
 // create an array and find second largest number
 
-var a =[8,5,4,7,9,2,3,9,];
-var b = a.sort()
-var c= a.reverse()
-console.log(c);
-const [x]= c;
-if(c[0]!=[x]){
-    console.log(c[1])
-}
-else {
-    console.log(c[2])
-}
-
-
-
-
+var a = [8, 5, 4, 7, 9,2, 2, 3, 9];
+var b = a.sort();
+var c = b.reverse();
+for (let i = 0; i <= c.length; i++) {
+        if(c[0]==c[i]){
+            c.splice(i,1);
+        }
+        else {
+            console.log(c[1]);
+        };
+    };
 
