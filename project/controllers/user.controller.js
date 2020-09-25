@@ -1,4 +1,5 @@
 const express = require("express")
+const passport =require("passport")
 var router =express.Router()
 var ObjectId = require("mongoose").Types.ObjectId
 var {User}= require("../models/usermodel")
@@ -65,4 +66,15 @@ router.put(":id",(req,res)=>{
              console.log("user Update sucessfully")
          }
      });
+});
+
+router.get("/login",(req,res,next)=>{
+    passport.authenticate('local',(err,user,info)=>{
+        if(err)
+        return res.status(400).json(err)
+        else if(user)
+        return res.status(200).json({ "token": user.generatejwt() })
+        else 
+        return res.status(404).json(info)
+    })(req,res)
 });
